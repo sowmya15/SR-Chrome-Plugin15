@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "knowlarity",
+  "description": "This extension will analyze ",
+  "author": "Knowlarity Communications",
+   //"homepage_url": "http://www.knowlarity.com/",
+   //"content_security_policy": "script-src 'self' https://konnect.knowlarity.com; object-src 'self'",
+  "version": "1.0",
+  "browser_action": {
+   "default_icon": "phone.png",
+   "default_popup": "login.html",
+   "default_locale": "details.html"
+  },
+  "background": {
+    "script": "js/background.js",
+    "page": "background.html"
+  },
+  
+ "content_scripts":[{
+  "matches":["http://*/*","https://*/*"],
+   "js":["js/login.js"]
+  }],
+  "permissions": [
+   "activeTab", "notifications","management", "storage"
+   ]
+    //"update_url": "http://clients2.google.com/service/update2/crx",
+   // "web_accessible_resources": [
+    //"img/call.png"
+  //]
+}

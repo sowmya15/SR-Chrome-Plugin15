@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+
+
+    <link rel="stylesheet" type="text/css" href="css/log_invisible.css">
+     <script type="text/javascript" src="js/jquery.min.js"></script>  
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+   <script type="text/javascript" src="js/details.js"></script>
+    <script type="text/javascript" src="js/background.js"></script>
+    <script type="text/javascript" src="js/encrypt.js"></script>
+
+    
+
+     
+  <title>integretion with SR accounts</title>
+    
+  </head>
+  <body>
+
+<div style="width: 298px; height: 380px">
+    <div class="product-intro-img">
+        <img src="https://sr.knowlarity.com/static/sr/img/login/logo.png" alt=""/>
+
+        <div class="product-intro-text">
+            Login to your SuperReceptionist account
+        </div>
+    </div>
+      
+
+   
+    <div class="form">
+           <form class="login" id="logerror">
+              <div class="row">
+                  <div id="error" style="font-size:18px;font-family: sans-serif;down:20px"> </div>
+                     <input type="text" class="userbackground" placeholder="Username/Email"
+                      id="username" required />
+              </div>
+                
+               <div class="row">
+                     <input class="lockbackground" type="password" placeholder="Password" 
+                     id="password" required/>
+               </div>
+              
+            </form>
+     </div>
+
+
+  
+     <div class="forget-password">
+          <div class="col-xs-8">
+                   <a href="https://sr.knowlarity.com/vr/password_reset/" 
+                    onclick="window.open( 'form.url.value, 'windowName' ); return false"
+                     target="_blank" style="font-size: 18px; position:relative;left:35px;color:#000000;    top: 21px;">Forgot Password</a>
+                
+             </div>
+
+                <div class="col-xs-4">
+                 <button id ="login_btn" class="fp-button"> Login</button> 
+               </div>
+          
+            </div>
+                    <div style="padding: 44px">
+        <div style= "padding-left: 39px;"><b>powered by knowlarity</b></div>
+        <div><span id='app_type'></span></div>
+    </div>
+
+</body>
+</html>
